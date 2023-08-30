@@ -1,0 +1,5 @@
+from sympy import solve, symbols, Eq
+
+x = symbols("x")
+
+print(solve(Eq()))
