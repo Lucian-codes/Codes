@@ -1,0 +1,7 @@
+from sympy import Matrix, solve_linear_system
+from sympy.abc import x, y
+
+system = Matrix(( (1, 4, 2), (1, 5, 14)))
+print(solve_linear_system(system, x, y))
+
+# 1. The thing timed by x is first, and y is second.    For Example:  1, 4, 2 = 1x + 4y = 2
