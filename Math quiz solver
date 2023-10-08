@@ -1,0 +1,62 @@
+from sympy import solve, symbols, Eq
+
+x = symbols("x")
+
+Ans = solve(Eq(x + 12, 20))
+
+N = int(input("Pick a number 1-4"))
+
+print("Quiz Time!")
+if N <= 1:
+    QA = input("Why is six afraid of seven?"
+               " A.You’re pointless"
+               " B.Because it was over 90 degrees"
+               " C.Owl-gebra"
+               " D.Because seven eight nine!"
+               " (For A, B, C, or D)").upper()
+    if QA == "D":
+        print("Correct!")
+        print(Ans)
+    else:
+        print("Wrong")
+        print("Try again")
+if N == 2:
+    QA = input("What did the triangle say to the circle?"
+               " A.You’re pointless"
+               " B.Because it was over 90 degrees"
+               " C.Owl-gebra"
+               " D.Because seven eight nine!"
+               " (For A, B, C, or D)").upper()
+    if QA == "A":
+        print("Correct!")
+        print(Ans)
+    else:
+        print("Wrong")
+        print("Try again")
+if N == 3:
+    QA = input("Why did the obtuse angle go to the beach?"
+               " A.You’re pointless"
+               " B.Because it was over 90 degrees"
+               " C.Owl-gebra"
+               " D.Because seven eight nine!"
+               " (For A, B, C, or D)").upper()
+    if QA == "B":
+        print("Correct!")
+        print(Ans)
+    else:
+        print("Wrong")
+        print("Try again")
+if N >= 4:
+    QA = input("What is a bird’s favorite type of math?"
+               " A.You’re pointless"
+               " B.Because it was over 90 degrees"
+               " C.Owl-gebra"
+               " D.Because seven eight nine!"
+               " (For A, B, C, or D)").upper()
+    if QA == "C":
+        print("Correct!")
+        print(Ans)
+    else:
+        print("Wrong")
+        print("Try again")
+print("Thanks for playing!")
